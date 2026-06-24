@@ -1,0 +1,73 @@
+运行配置：
+{
+  "data_dir": "/public/home/yangzhe/ll/data",
+  "output_dir": "/public/home/yangzhe/ll/data/lstm_outputs",
+  "horizons": [
+    90
+  ],
+  "seeds": [
+    42,
+    52,
+    62,
+    72,
+    82
+  ],
+  "epochs": 200,
+  "patience": 20,
+  "batch_size": 32,
+  "learning_rate": 0.001,
+  "weight_decay": 1e-05,
+  "hidden_size": 128,
+  "num_layers": 2,
+  "dropout": 0.2,
+  "grad_clip": 1.0,
+  "device": "cuda"
+}
+
+开始训练：LSTM | horizon=90 | seed=42 | device=cuda
+Epoch 001 | train=0.618877 | val=0.600153 | lr=1.00e-03 | best=0.600153
+Epoch 002 | train=0.477618 | val=0.563107 | lr=1.00e-03 | best=0.563107
+Epoch 010 | train=0.357368 | val=0.991809 | lr=5.00e-04 | best=0.563107
+Epoch 020 | train=0.319302 | val=1.114043 | lr=1.25e-04 | best=0.563107
+触发早停：连续 20 轮验证损失未改善。
+完成：horizon=90, seed=42, MSE=176663.976397, MAE=332.200563, best_epoch=2
+
+开始训练：LSTM | horizon=90 | seed=52 | device=cuda
+Epoch 001 | train=0.625562 | val=0.500783 | lr=1.00e-03 | best=0.500783
+Epoch 010 | train=0.355353 | val=1.016253 | lr=5.00e-04 | best=0.500783
+Epoch 020 | train=0.318528 | val=1.246703 | lr=1.25e-04 | best=0.500783
+触发早停：连续 20 轮验证损失未改善。
+完成：horizon=90, seed=52, MSE=151049.163064, MAE=309.332921, best_epoch=1
+
+开始训练：LSTM | horizon=90 | seed=62 | device=cuda
+Epoch 001 | train=0.618290 | val=0.652230 | lr=1.00e-03 | best=0.652230
+Epoch 010 | train=0.369597 | val=1.178513 | lr=5.00e-04 | best=0.652230
+Epoch 020 | train=0.329559 | val=1.208951 | lr=1.25e-04 | best=0.652230
+触发早停：连续 20 轮验证损失未改善。
+完成：horizon=90, seed=62, MSE=177764.300538, MAE=329.278852, best_epoch=1
+
+开始训练：LSTM | horizon=90 | seed=72 | device=cuda
+Epoch 001 | train=0.614817 | val=0.562843 | lr=1.00e-03 | best=0.562843
+Epoch 002 | train=0.474113 | val=0.549684 | lr=1.00e-03 | best=0.549684
+Epoch 010 | train=0.360616 | val=0.916127 | lr=5.00e-04 | best=0.549684
+Epoch 020 | train=0.319013 | val=1.032141 | lr=1.25e-04 | best=0.549684
+触发早停：连续 20 轮验证损失未改善。
+完成：horizon=90, seed=72, MSE=174114.270845, MAE=327.550295, best_epoch=2
+
+开始训练：LSTM | horizon=90 | seed=82 | device=cuda
+Epoch 001 | train=0.621777 | val=0.624273 | lr=1.00e-03 | best=0.624273
+Epoch 010 | train=0.355055 | val=0.961197 | lr=5.00e-04 | best=0.624273
+Epoch 020 | train=0.315580 | val=1.137561 | lr=1.25e-04 | best=0.624273
+触发早停：连续 20 轮验证损失未改善。
+完成：horizon=90, seed=82, MSE=149339.247336, MAE=301.439597, best_epoch=1
+
+------------------------------------------------------------------------
+LSTM horizon=90 的 5 轮汇总：
+MSE = 165786.191636 ± 14307.691860
+MAE = 319.960446 ± 13.695119
+------------------------------------------------------------------------
+
+全部 LSTM 实验完成。
+汇总结果： /public/home/yangzhe/ll/data/lstm_outputs/results/lstm_summary.csv
+model  horizon  num_runs      mse_mean     mse_std   mae_mean   mae_std  best_epoch_mean  elapsed_seconds_mean
+ LSTM       90         5 165786.191636 14307.69186 319.960446 13.695119              1.4              3.450352

@@ -1,0 +1,24 @@
+{
+  "data_dir": "/public/home/yangzhe/ll/data",
+  "output_dir": "/public/home/yangzhe/ll/data/lstm_outputs",
+  "horizons": [
+    365
+  ],
+  "seeds": [
+    42,
+    52,
+    62,
+    72,
+    82
+  ],
+  "epochs": 200,
+  "patience": 20,
+  "batch_size": 32,
+  "learning_rate": 0.001,
+  "weight_decay": 1e-05,
+  "hidden_size": 128,
+  "num_layers": 2,
+  "dropout": 0.2,
+  "grad_clip": 1.0,
+  "device": "cuda"
+}

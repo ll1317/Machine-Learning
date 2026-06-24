@@ -1,0 +1,2 @@
+﻿model,horizon,num_runs,mse_mean,mse_std,mae_mean,mae_std,best_epoch_mean,elapsed_seconds_mean
+LSTM,365,5,180421.90356311173,9706.78722257519,331.28809660280865,11.707554522388946,8.8,2.028330755233765

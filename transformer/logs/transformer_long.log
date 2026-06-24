@@ -1,0 +1,174 @@
+运行配置：
+{
+  "data_dir": "/public/home/yangzhe/ll/data",
+  "output_dir": "/public/home/yangzhe/ll/data/transformer_outputs",
+  "horizons": [
+    365
+  ],
+  "seeds": [
+    42,
+    52,
+    62,
+    72,
+    82
+  ],
+  "epochs": 200,
+  "patience": 20,
+  "batch_size": 32,
+  "learning_rate": 0.0003,
+  "weight_decay": 0.0001,
+  "d_model": 64,
+  "nhead": 4,
+  "num_layers": 2,
+  "dim_feedforward": 128,
+  "dropout": 0.2,
+  "grad_clip": 1.0,
+  "device": "cuda"
+}
+
+开始训练：Transformer | horizon=365 | seed=42 | device=cuda
+Epoch 001 | train=0.763802 | val=0.599312 | lr=3.00e-04 | best=0.599312
+Epoch 002 | train=0.727950 | val=0.572447 | lr=3.00e-04 | best=0.572447
+Epoch 003 | train=0.705084 | val=0.543679 | lr=3.00e-04 | best=0.543679
+Epoch 004 | train=0.676641 | val=0.518420 | lr=3.00e-04 | best=0.518420
+Epoch 005 | train=0.648696 | val=0.496716 | lr=3.00e-04 | best=0.496716
+Epoch 006 | train=0.617892 | val=0.478713 | lr=3.00e-04 | best=0.478713
+Epoch 007 | train=0.589827 | val=0.467795 | lr=3.00e-04 | best=0.467795
+Epoch 008 | train=0.563725 | val=0.458614 | lr=3.00e-04 | best=0.458614
+Epoch 009 | train=0.542234 | val=0.454508 | lr=3.00e-04 | best=0.454508
+Epoch 010 | train=0.523709 | val=0.450092 | lr=3.00e-04 | best=0.450092
+Epoch 011 | train=0.508300 | val=0.448784 | lr=3.00e-04 | best=0.448784
+Epoch 012 | train=0.495801 | val=0.447838 | lr=3.00e-04 | best=0.447838
+Epoch 014 | train=0.477585 | val=0.444772 | lr=3.00e-04 | best=0.444772
+Epoch 015 | train=0.469406 | val=0.438730 | lr=3.00e-04 | best=0.438730
+Epoch 016 | train=0.463847 | val=0.435761 | lr=3.00e-04 | best=0.435761
+Epoch 020 | train=0.450471 | val=0.436303 | lr=3.00e-04 | best=0.435761
+Epoch 030 | train=0.433634 | val=0.445964 | lr=7.50e-05 | best=0.435761
+触发早停：连续 20 轮验证损失未改善。
+完成：horizon=365, seed=42, MSE(kWh²)=50.495953, MAE(kWh)=5.568287, best_epoch=16
+
+开始训练：Transformer | horizon=365 | seed=52 | device=cuda
+Epoch 001 | train=0.777121 | val=0.624419 | lr=3.00e-04 | best=0.624419
+Epoch 002 | train=0.738215 | val=0.610631 | lr=3.00e-04 | best=0.610631
+Epoch 003 | train=0.717558 | val=0.603031 | lr=3.00e-04 | best=0.603031
+Epoch 004 | train=0.694410 | val=0.587727 | lr=3.00e-04 | best=0.587727
+Epoch 005 | train=0.667991 | val=0.569777 | lr=3.00e-04 | best=0.569777
+Epoch 006 | train=0.638847 | val=0.550486 | lr=3.00e-04 | best=0.550486
+Epoch 007 | train=0.609917 | val=0.529098 | lr=3.00e-04 | best=0.529098
+Epoch 008 | train=0.581631 | val=0.511177 | lr=3.00e-04 | best=0.511177
+Epoch 009 | train=0.558758 | val=0.496679 | lr=3.00e-04 | best=0.496679
+Epoch 010 | train=0.539922 | val=0.481158 | lr=3.00e-04 | best=0.481158
+Epoch 011 | train=0.521885 | val=0.469764 | lr=3.00e-04 | best=0.469764
+Epoch 012 | train=0.505399 | val=0.462117 | lr=3.00e-04 | best=0.462117
+Epoch 013 | train=0.496538 | val=0.454666 | lr=3.00e-04 | best=0.454666
+Epoch 014 | train=0.487602 | val=0.441921 | lr=3.00e-04 | best=0.441921
+Epoch 018 | train=0.459948 | val=0.436370 | lr=3.00e-04 | best=0.436370
+Epoch 019 | train=0.454851 | val=0.433292 | lr=3.00e-04 | best=0.433292
+Epoch 020 | train=0.454712 | val=0.433972 | lr=3.00e-04 | best=0.433292
+Epoch 022 | train=0.447122 | val=0.429166 | lr=3.00e-04 | best=0.429166
+Epoch 023 | train=0.443801 | val=0.428334 | lr=3.00e-04 | best=0.428334
+Epoch 025 | train=0.439025 | val=0.427539 | lr=3.00e-04 | best=0.427539
+Epoch 026 | train=0.438316 | val=0.423468 | lr=3.00e-04 | best=0.423468
+Epoch 027 | train=0.435478 | val=0.422912 | lr=3.00e-04 | best=0.422912
+Epoch 028 | train=0.431830 | val=0.421988 | lr=3.00e-04 | best=0.421988
+Epoch 030 | train=0.428930 | val=0.429379 | lr=3.00e-04 | best=0.421988
+Epoch 032 | train=0.426505 | val=0.419204 | lr=3.00e-04 | best=0.419204
+Epoch 037 | train=0.418438 | val=0.418070 | lr=3.00e-04 | best=0.418070
+Epoch 038 | train=0.419599 | val=0.416529 | lr=3.00e-04 | best=0.416529
+Epoch 040 | train=0.415192 | val=0.418999 | lr=3.00e-04 | best=0.416529
+Epoch 041 | train=0.414971 | val=0.416138 | lr=3.00e-04 | best=0.416138
+Epoch 042 | train=0.412702 | val=0.415931 | lr=3.00e-04 | best=0.415931
+Epoch 043 | train=0.411564 | val=0.415710 | lr=3.00e-04 | best=0.415710
+Epoch 044 | train=0.411023 | val=0.413611 | lr=3.00e-04 | best=0.413611
+Epoch 045 | train=0.408038 | val=0.409657 | lr=3.00e-04 | best=0.409657
+Epoch 046 | train=0.406695 | val=0.408168 | lr=3.00e-04 | best=0.408168
+Epoch 047 | train=0.407365 | val=0.402663 | lr=3.00e-04 | best=0.402663
+Epoch 050 | train=0.402972 | val=0.403996 | lr=3.00e-04 | best=0.402663
+Epoch 051 | train=0.404017 | val=0.400077 | lr=3.00e-04 | best=0.400077
+Epoch 052 | train=0.400016 | val=0.399181 | lr=3.00e-04 | best=0.399181
+Epoch 055 | train=0.400293 | val=0.396656 | lr=3.00e-04 | best=0.396656
+Epoch 060 | train=0.394119 | val=0.399446 | lr=3.00e-04 | best=0.396656
+Epoch 070 | train=0.389430 | val=0.396724 | lr=7.50e-05 | best=0.396656
+触发早停：连续 20 轮验证损失未改善。
+完成：horizon=365, seed=52, MSE(kWh²)=47.728875, MAE(kWh)=5.323951, best_epoch=55
+
+开始训练：Transformer | horizon=365 | seed=62 | device=cuda
+Epoch 001 | train=0.762221 | val=0.596316 | lr=3.00e-04 | best=0.596316
+Epoch 002 | train=0.723629 | val=0.582076 | lr=3.00e-04 | best=0.582076
+Epoch 003 | train=0.700763 | val=0.567511 | lr=3.00e-04 | best=0.567511
+Epoch 004 | train=0.673699 | val=0.551118 | lr=3.00e-04 | best=0.551118
+Epoch 005 | train=0.645490 | val=0.531720 | lr=3.00e-04 | best=0.531720
+Epoch 006 | train=0.614719 | val=0.511704 | lr=3.00e-04 | best=0.511704
+Epoch 007 | train=0.585747 | val=0.494652 | lr=3.00e-04 | best=0.494652
+Epoch 008 | train=0.562365 | val=0.478528 | lr=3.00e-04 | best=0.478528
+Epoch 009 | train=0.541824 | val=0.464713 | lr=3.00e-04 | best=0.464713
+Epoch 010 | train=0.521884 | val=0.455526 | lr=3.00e-04 | best=0.455526
+Epoch 011 | train=0.505946 | val=0.449051 | lr=3.00e-04 | best=0.449051
+Epoch 012 | train=0.496484 | val=0.444535 | lr=3.00e-04 | best=0.444535
+Epoch 013 | train=0.486002 | val=0.439170 | lr=3.00e-04 | best=0.439170
+Epoch 014 | train=0.478077 | val=0.435825 | lr=3.00e-04 | best=0.435825
+Epoch 015 | train=0.474411 | val=0.435760 | lr=3.00e-04 | best=0.435760
+Epoch 016 | train=0.468811 | val=0.434638 | lr=3.00e-04 | best=0.434638
+Epoch 018 | train=0.459596 | val=0.433079 | lr=3.00e-04 | best=0.433079
+Epoch 020 | train=0.451711 | val=0.437250 | lr=3.00e-04 | best=0.433079
+Epoch 023 | train=0.445261 | val=0.432870 | lr=3.00e-04 | best=0.432870
+Epoch 030 | train=0.431004 | val=0.437006 | lr=1.50e-04 | best=0.432870
+Epoch 040 | train=0.424632 | val=0.439731 | lr=7.50e-05 | best=0.432870
+触发早停：连续 20 轮验证损失未改善。
+完成：horizon=365, seed=62, MSE(kWh²)=50.648261, MAE(kWh)=5.436441, best_epoch=23
+
+开始训练：Transformer | horizon=365 | seed=72 | device=cuda
+Epoch 001 | train=0.755984 | val=0.608435 | lr=3.00e-04 | best=0.608435
+Epoch 002 | train=0.716851 | val=0.577888 | lr=3.00e-04 | best=0.577888
+Epoch 003 | train=0.691488 | val=0.555740 | lr=3.00e-04 | best=0.555740
+Epoch 004 | train=0.665921 | val=0.536630 | lr=3.00e-04 | best=0.536630
+Epoch 005 | train=0.638116 | val=0.517368 | lr=3.00e-04 | best=0.517368
+Epoch 006 | train=0.611620 | val=0.499399 | lr=3.00e-04 | best=0.499399
+Epoch 007 | train=0.584989 | val=0.482015 | lr=3.00e-04 | best=0.482015
+Epoch 008 | train=0.562572 | val=0.470878 | lr=3.00e-04 | best=0.470878
+Epoch 009 | train=0.540938 | val=0.463064 | lr=3.00e-04 | best=0.463064
+Epoch 010 | train=0.523534 | val=0.447828 | lr=3.00e-04 | best=0.447828
+Epoch 011 | train=0.508568 | val=0.443740 | lr=3.00e-04 | best=0.443740
+Epoch 012 | train=0.495484 | val=0.443367 | lr=3.00e-04 | best=0.443367
+Epoch 013 | train=0.485901 | val=0.441496 | lr=3.00e-04 | best=0.441496
+Epoch 014 | train=0.481033 | val=0.437876 | lr=3.00e-04 | best=0.437876
+Epoch 015 | train=0.475446 | val=0.434732 | lr=3.00e-04 | best=0.434732
+Epoch 016 | train=0.467765 | val=0.433032 | lr=3.00e-04 | best=0.433032
+Epoch 020 | train=0.452400 | val=0.437029 | lr=3.00e-04 | best=0.433032
+Epoch 030 | train=0.435839 | val=0.437014 | lr=7.50e-05 | best=0.433032
+触发早停：连续 20 轮验证损失未改善。
+完成：horizon=365, seed=72, MSE(kWh²)=51.818323, MAE(kWh)=5.486193, best_epoch=16
+
+开始训练：Transformer | horizon=365 | seed=82 | device=cuda
+Epoch 001 | train=0.777584 | val=0.598532 | lr=3.00e-04 | best=0.598532
+Epoch 002 | train=0.733638 | val=0.585504 | lr=3.00e-04 | best=0.585504
+Epoch 003 | train=0.712576 | val=0.575574 | lr=3.00e-04 | best=0.575574
+Epoch 004 | train=0.688267 | val=0.555843 | lr=3.00e-04 | best=0.555843
+Epoch 005 | train=0.662178 | val=0.531227 | lr=3.00e-04 | best=0.531227
+Epoch 006 | train=0.632412 | val=0.511341 | lr=3.00e-04 | best=0.511341
+Epoch 007 | train=0.604909 | val=0.495359 | lr=3.00e-04 | best=0.495359
+Epoch 008 | train=0.581256 | val=0.482056 | lr=3.00e-04 | best=0.482056
+Epoch 009 | train=0.558701 | val=0.469820 | lr=3.00e-04 | best=0.469820
+Epoch 010 | train=0.536129 | val=0.464602 | lr=3.00e-04 | best=0.464602
+Epoch 011 | train=0.522345 | val=0.454903 | lr=3.00e-04 | best=0.454903
+Epoch 012 | train=0.510242 | val=0.451514 | lr=3.00e-04 | best=0.451514
+Epoch 013 | train=0.495899 | val=0.448035 | lr=3.00e-04 | best=0.448035
+Epoch 014 | train=0.488324 | val=0.445934 | lr=3.00e-04 | best=0.445934
+Epoch 015 | train=0.479428 | val=0.442562 | lr=3.00e-04 | best=0.442562
+Epoch 017 | train=0.469291 | val=0.441863 | lr=3.00e-04 | best=0.441863
+Epoch 018 | train=0.462678 | val=0.438173 | lr=3.00e-04 | best=0.438173
+Epoch 020 | train=0.453127 | val=0.441253 | lr=3.00e-04 | best=0.438173
+Epoch 030 | train=0.438572 | val=0.451183 | lr=7.50e-05 | best=0.438173
+触发早停：连续 20 轮验证损失未改善。
+完成：horizon=365, seed=82, MSE(kWh²)=47.279640, MAE(kWh)=5.306012, best_epoch=18
+
+------------------------------------------------------------------------
+Transformer horizon=365 的 5 轮汇总：
+MSE(kWh²) = 49.594211 ± 1.981638
+MAE(kWh) = 5.424177 ± 0.110422
+------------------------------------------------------------------------
+
+全部Transformer实验完成。
+汇总结果： /public/home/yangzhe/ll/data/transformer_outputs/results/transformer_summary.csv
+      model  horizon  num_runs  mse_raw_mean  mse_raw_std  mae_raw_mean  mae_raw_std  mse_kwh2_mean  mse_kwh2_std  mae_kwh_mean  mae_kwh_std  best_epoch_mean  elapsed_seconds_mean
+Transformer      365         5 178539.157913  7133.895661    325.450619     6.625335      49.594211      1.981638      5.424177     0.110422             25.6              5.073522

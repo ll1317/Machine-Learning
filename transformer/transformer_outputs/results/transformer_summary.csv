@@ -1,0 +1,2 @@
+﻿model,horizon,num_runs,mse_raw_mean,mse_raw_std,mae_raw_mean,mae_raw_std,mse_kwh2_mean,mse_kwh2_std,mae_kwh_mean,mae_kwh_std,best_epoch_mean,elapsed_seconds_mean
+Transformer,365,5,178539.15791313458,7133.895660684458,325.45061871389123,6.625334539488816,49.59421053142628,1.9816376835234581,5.424176978564853,0.11042224232481324,25.6,5.073521995544434

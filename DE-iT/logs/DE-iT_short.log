@@ -1,0 +1,96 @@
+运行配置：
+{
+  "data_dir": "/public/home/yangzhe/ll/data",
+  "output_dir": "/public/home/yangzhe/ll/data/deitransformer_outputs",
+  "model": "deitransformer",
+  "horizons": [
+    90
+  ],
+  "seeds": [
+    42,
+    52,
+    62,
+    72,
+    82
+  ],
+  "epochs": 200,
+  "patience": 20,
+  "batch_size": 32,
+  "learning_rate": 0.0003,
+  "weight_decay": 0.0001,
+  "d_model": 64,
+  "nhead": 4,
+  "num_layers": 2,
+  "dim_feedforward": 128,
+  "dropout": 0.2,
+  "moving_average_kernel": 7,
+  "gate_init": 0.5,
+  "grad_clip": 1.0,
+  "device": "cuda"
+}
+
+开始训练：deitransformer | horizon=90 | seed=42 | device=cuda
+Epoch 001 | train=0.815570 | val=0.411375 | lr=3.00e-04 | gate=0.5016 | best=0.411375
+Epoch 002 | train=0.686375 | val=0.348333 | lr=3.00e-04 | gate=0.5023 | best=0.348333
+Epoch 003 | train=0.609096 | val=0.316645 | lr=3.00e-04 | gate=0.5018 | best=0.316645
+Epoch 010 | train=0.458373 | val=0.391089 | lr=1.50e-04 | gate=0.4987 | best=0.316645
+Epoch 020 | train=0.435333 | val=0.446266 | lr=7.50e-05 | gate=0.4959 | best=0.316645
+触发早停：连续 20 轮验证损失未改善。
+完成：mode=deitransformer, horizon=90, seed=42, MSE(kWh²)=43.793678, MAE(kWh)=5.279527, gate=0.5018, best_epoch=3
+
+开始训练：deitransformer | horizon=90 | seed=52 | device=cuda
+Epoch 001 | train=0.820029 | val=0.455383 | lr=3.00e-04 | gate=0.5017 | best=0.455383
+Epoch 002 | train=0.685989 | val=0.351505 | lr=3.00e-04 | gate=0.5025 | best=0.351505
+Epoch 003 | train=0.604002 | val=0.350207 | lr=3.00e-04 | gate=0.5024 | best=0.350207
+Epoch 004 | train=0.558280 | val=0.337878 | lr=3.00e-04 | gate=0.5021 | best=0.337878
+Epoch 007 | train=0.484858 | val=0.327072 | lr=3.00e-04 | gate=0.5014 | best=0.327072
+Epoch 009 | train=0.465814 | val=0.326899 | lr=3.00e-04 | gate=0.5002 | best=0.326899
+Epoch 010 | train=0.456469 | val=0.326201 | lr=3.00e-04 | gate=0.4995 | best=0.326201
+Epoch 014 | train=0.433739 | val=0.314630 | lr=3.00e-04 | gate=0.4965 | best=0.314630
+Epoch 020 | train=0.411603 | val=0.322767 | lr=1.50e-04 | gate=0.4920 | best=0.314630
+Epoch 021 | train=0.406308 | val=0.307990 | lr=1.50e-04 | gate=0.4917 | best=0.307990
+Epoch 023 | train=0.404223 | val=0.307807 | lr=1.50e-04 | gate=0.4909 | best=0.307807
+Epoch 024 | train=0.403834 | val=0.305038 | lr=1.50e-04 | gate=0.4905 | best=0.305038
+Epoch 030 | train=0.396953 | val=0.327503 | lr=7.50e-05 | gate=0.4881 | best=0.305038
+Epoch 040 | train=0.391053 | val=0.316946 | lr=3.75e-05 | gate=0.4864 | best=0.305038
+触发早停：连续 20 轮验证损失未改善。
+完成：mode=deitransformer, horizon=90, seed=52, MSE(kWh²)=58.036719, MAE(kWh)=5.947396, gate=0.4905, best_epoch=24
+
+开始训练：deitransformer | horizon=90 | seed=62 | device=cuda
+Epoch 001 | train=0.815585 | val=0.444277 | lr=3.00e-04 | gate=0.5017 | best=0.444277
+Epoch 002 | train=0.686117 | val=0.356542 | lr=3.00e-04 | gate=0.5024 | best=0.356542
+Epoch 003 | train=0.610175 | val=0.354007 | lr=3.00e-04 | gate=0.5022 | best=0.354007
+Epoch 010 | train=0.454970 | val=0.445012 | lr=1.50e-04 | gate=0.4997 | best=0.354007
+Epoch 020 | train=0.428893 | val=0.412734 | lr=7.50e-05 | gate=0.4969 | best=0.354007
+触发早停：连续 20 轮验证损失未改善。
+完成：mode=deitransformer, horizon=90, seed=62, MSE(kWh²)=45.744285, MAE(kWh)=5.380152, gate=0.5022, best_epoch=3
+
+开始训练：deitransformer | horizon=90 | seed=72 | device=cuda
+Epoch 001 | train=0.823337 | val=0.461185 | lr=3.00e-04 | gate=0.5016 | best=0.461185
+Epoch 002 | train=0.693303 | val=0.391504 | lr=3.00e-04 | gate=0.5022 | best=0.391504
+Epoch 010 | train=0.460993 | val=0.522495 | lr=1.50e-04 | gate=0.4996 | best=0.391504
+Epoch 020 | train=0.435998 | val=0.513244 | lr=3.75e-05 | gate=0.4969 | best=0.391504
+触发早停：连续 20 轮验证损失未改善。
+完成：mode=deitransformer, horizon=90, seed=72, MSE(kWh²)=57.155843, MAE(kWh)=6.023278, gate=0.5022, best_epoch=2
+
+开始训练：deitransformer | horizon=90 | seed=82 | device=cuda
+Epoch 001 | train=0.820116 | val=0.422372 | lr=3.00e-04 | gate=0.5018 | best=0.422372
+Epoch 003 | train=0.607265 | val=0.342635 | lr=3.00e-04 | gate=0.5023 | best=0.342635
+Epoch 010 | train=0.456845 | val=0.385431 | lr=1.50e-04 | gate=0.4998 | best=0.342635
+Epoch 014 | train=0.446192 | val=0.335005 | lr=1.50e-04 | gate=0.4985 | best=0.335005
+Epoch 020 | train=0.429355 | val=0.350709 | lr=7.50e-05 | gate=0.4961 | best=0.335005
+Epoch 030 | train=0.418273 | val=0.390927 | lr=3.75e-05 | gate=0.4943 | best=0.335005
+触发早停：连续 20 轮验证损失未改善。
+完成：mode=deitransformer, horizon=90, seed=82, MSE(kWh²)=45.561865, MAE(kWh)=5.268864, gate=0.4985, best_epoch=14
+
+------------------------------------------------------------------------
+deitransformer horizon=90 的 5 轮汇总：
+MSE(kWh²) = 50.058478 ± 6.930087
+MAE(kWh) = 5.579843 ± 0.373666
+融合权重 alpha = 0.4990 ± 0.0050
+------------------------------------------------------------------------
+
+全部 deitransformer 实验完成。
+汇总结果： /public/home/yangzhe/ll/data/deitransformer_outputs/results/deitransformer_summary.csv
+         model  horizon  num_runs  mse_raw_mean  mse_raw_std  mae_raw_mean  mae_raw_std  mse_kwh2_mean  mse_kwh2_std  mae_kwh_mean  mae_kwh_std  fusion_weight_mean  fusion_weight_std  best_epoch_mean  elapsed_seconds_mean
+deitransformer       90         5 180210.521407 24948.313661      334.7906    22.419952      50.058478      6.930087      5.579843     0.373666            0.499035           0.004997              9.2              8.233194
