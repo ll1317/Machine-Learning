@@ -1,0 +1,19 @@
+# Recommended Python version: 3.10
+
+#
+
+# Core dependencies for data preprocessing, model training,
+
+# metric calculation, and result visualization.
+
+#
+
+# PyTorch installation may depend on your CUDA version.
+
+# See: https://pytorch.org/get-started/locally/
+
+numpy>=1.23.5,<2.0
+pandas>=1.5.3,<3.0
+scikit-learn>=1.2.2,<2.0
+matplotlib>=3.6.3,<4.0
+torch>=1.13.1,<3.0
